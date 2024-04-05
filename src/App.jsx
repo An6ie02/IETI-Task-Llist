@@ -1,12 +1,23 @@
 import { Header } from './components/Header'
 import { TaskList } from './components/TaskList'
-import { Task } from './components/Task'
 
 function App() {
   const taskList = [
-    { task : 'Buy a new gaming laptop', isCompleted : false },
-    { task : 'Complete a previous task', isCompleted : true },
-    { task : 'Create a new portofolio site', isCompleted : false },
+    {
+      task: 'Buy a new gaming laptop',
+      description: 'You need a new gaming laptop',
+      isCompleted: false
+    },
+    {
+      task: 'Complete a previous task',
+      description: 'You accept the compromise',
+      isCompleted: true
+    },
+    {
+      task: 'Create a new portofolio site',
+      description: 'Create a new portofolio site about IETI class',
+      isCompleted: false
+    },
   ]
 
   return (
