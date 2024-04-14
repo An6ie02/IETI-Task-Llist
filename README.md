@@ -21,6 +21,15 @@ La funcionalidad para editar tarea se implemeto de tal forma que al dar click en
 
 ![Update](https://github.com/An6ie02/IETI-Task-Llist/assets/100453879/0b9d479e-fc59-41f7-81a0-3ff0b508eb38)
 
+## Parte 3:
+
+Crear el propio hook personalizado para mejorar el código, hacerlo más limpio y organizado. El hook debe retornar 3 funciones para:
++ Crear tareas
++ Borrar tareas
++ Actualizar tareas
+
+Las funcionalidades se siguen manteniendo, pero ahora se implementa el hook personalizado para mejorar el código.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
