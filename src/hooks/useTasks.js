@@ -59,6 +59,13 @@ export function useTasks(params) {
         return newTask;
     }
 
+    const handleCheck = (taskIndex) => {
+        let newTasks = [...tasks];
+        newTasks[taskIndex].isCompleted = !newTasks[taskIndex].isCompleted;
+        setTasks(newTasks);
+        localStorage.setItem("tasks", JSON.stringify(newTasks));
+    }
+
     useEffect(() => {
         const localStorageData = localStorage.getItem("tasks");
         if (localStorageData) {
@@ -67,6 +74,6 @@ export function useTasks(params) {
         }
     }, []);
 
-    return { tasks, isEditing, addOrEditTask, editTask, deleteTask };
+    return { tasks, isEditing, addOrEditTask, editTask, deleteTask, handleCheck };
 
 }

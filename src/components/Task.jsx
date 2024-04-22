@@ -1,5 +1,5 @@
 export const Task = (props) => {
-    const { title, description, isCompleted, onEdit, onDelete } = props
+    const { title, description, isCompleted, onEdit, onDelete, onCheck } = props
 
     return (
         <li>
@@ -8,7 +8,7 @@ export const Task = (props) => {
             <button onClick={onEdit}>Edit</button>
             <button onClick={onDelete}>Delete</button>
             <label>Completed</label>
-            <input type="checkbox" defaultChecked={isCompleted} />
+            <input type="checkbox" checked={isCompleted} onChange={onCheck} />
         </li>
         
     )

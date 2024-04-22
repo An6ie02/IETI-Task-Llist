@@ -4,8 +4,8 @@ import { TaskForm } from "./TaskForm";
 
 export const TaskList = (props) => {
     const { list } = props;
-    const { tasks, isEditing, addOrEditTask, editTask, deleteTask } = useTasks({list});
-    
+    const { tasks, isEditing, addOrEditTask, editTask, deleteTask, handleCheck } = useTasks({ list });
+
     return (
         <div>
             <TaskForm addOrEditTask={addOrEditTask} isEditing={isEditing} />
@@ -18,6 +18,7 @@ export const TaskList = (props) => {
                         isCompleted={task.isCompleted}
                         onEdit={() => editTask(index)}
                         onDelete={() => deleteTask(index)}
+                        onCheck={() => handleCheck(index)}
                     />
                 ))}
             </ul>
