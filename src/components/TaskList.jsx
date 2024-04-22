@@ -1,5 +1,6 @@
 import { useTasks } from "../hooks/useTasks";
 import { Task } from "./Task";
+import { TaskForm } from "./TaskForm";
 
 export const TaskList = (props) => {
     const { list } = props;
@@ -7,9 +8,7 @@ export const TaskList = (props) => {
     
     return (
         <div>
-            <input type="text" id="title" placeholder="Add the name of new task" />
-            <input type="text" id="description" placeholder="Add the description of new task" />
-            <button onClick={addOrEditTask}>{isEditing ? 'Update Task' : 'Add Task'}</button>
+            <TaskForm addOrEditTask={addOrEditTask} isEditing={isEditing} />
             <ul>
                 {tasks.map((task, index) => (
                     <Task
