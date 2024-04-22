@@ -30,6 +30,14 @@ Crear el propio hook personalizado para mejorar el código, hacerlo más limpio 
 
 Las funcionalidades se siguen manteniendo, pero ahora se implementa el hook personalizado para mejorar el código.
 
+## Parte 4:
++ Incluye en tu aplicación un formulario para que el usuario pueda guardar el nombre de la tarea y una descripción.
++ Crea una validación para este formulario teniendo en cuenta que no se puedan guardar tareas en las cuales el nombre tenga menos de 3 caracteres y la descripción no debe ser obligatoria.
+
+Se implementan las validaciones en el formulario de tal forma que no se pueda guardar una tarea si el nombre tiene menos de 3 caracteres o si la descripcion esta vacia. En casos de error se muestra un mensaje de error y el boton de añadir o editar se deshabilita.
+
+![Validation](https://github.com/An6ie02/IETI-Task-Llist/assets/100453879/3c05a6de-6fcc-43c1-9bc7-4e97cbd6dd00)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
