@@ -38,6 +38,19 @@ Se implementan las validaciones en el formulario de tal forma que no se pueda gu
 
 ![Validation](https://github.com/An6ie02/IETI-Task-Llist/assets/100453879/3c05a6de-6fcc-43c1-9bc7-4e97cbd6dd00)
 
+## Parte 5:
++ Crear un componente Menu con los siguientes links:
+    - Home
+    - Tareas
+    - Sobre Nosotros
++ Utiliza React router para permitir que el usuario navegue entre las diferentes rutas de tu aplicación.
+
+Se crea el componente `Menu` que contiene los links a las diferentes rutas de la aplicacion, se implementa `react-router-dom` para la navegacion entre las rutas. Se hace que la carga de la aplicacion sea mas rapida utilizando `React.lazy` y `Suspense`.
+
+![home](https://github.com/An6ie02/IETI-Task-Llist/assets/100453879/37f999dc-9696-4fba-874b-13091a52738a)\
+![about](https://github.com/An6ie02/IETI-Task-Llist/assets/100453879/dd27ce9b-6e2c-402e-8069-634612ff394d)\
+![tasks](https://github.com/An6ie02/IETI-Task-Llist/assets/100453879/8eb899d2-38d5-4b0f-aaad-0c7bb1f3878e)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
