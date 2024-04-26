@@ -1,31 +1,30 @@
+import React, { Suspense } from 'react'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from './components/Header'
-import { TaskList } from './components/TaskList'
+import { Menu } from './components/Menu'
+
+const HomePage = React.lazy(() => import("./pages/HomePage"));
+const AboutUsPage = React.lazy(() => import("./pages/AboutUsPage"));
+const TasksPage = React.lazy(() => import("./pages/TasksPage"));
 
 function App() {
-  const taskList = [
-    {
-      task: 'Buy a new gaming laptop',
-      description: 'You need a new gaming laptop',
-      isCompleted: false
-    },
-    {
-      task: 'Complete a previous task',
-      description: 'You accept the compromise',
-      isCompleted: true
-    },
-    {
-      task: 'Create a new portofolio site',
-      description: 'Create a new portofolio site about IETI class',
-      isCompleted: false
-    },
-  ]
 
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-      <TaskList list={taskList} />
-    </div>
-
+      <Menu />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <HomePage />
+            </Suspense>
+          } />
+        <Route path="/about" element={<Suspense fallback={<div>Loading...</div>}><AboutUsPage /></Suspense>} />
+        <Route path="/tasks" element={<Suspense fallback={<div>Loading...</div>}><TasksPage /></Suspense>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
