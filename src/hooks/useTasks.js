@@ -6,7 +6,8 @@ export function useTasks(params) {
     const [isEditing, setIsEditing] = useState(false);
     const [currentTaskIndex, setCurrentTaskIndex] = useState(null);
 
-    const addOrEditTask = () => {
+    const addOrEditTask = (event) => {
+        event.preventDefault();
         if (isEditing) {
             updateTask();
         } else {

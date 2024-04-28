@@ -1,3 +1,5 @@
+import { Grid } from "@chakra-ui/react";
+
 import { useTasks } from "../hooks/useTasks";
 import { Task } from "./Task";
 import { TaskForm } from "./TaskForm";
@@ -9,7 +11,7 @@ export const TaskList = (props) => {
     return (
         <div>
             <TaskForm addOrEditTask={addOrEditTask} isEditing={isEditing} />
-            <ul>
+            <Grid templateColumns="repeat(3, 1fr)" gap={3} mx={20}>
                 {tasks.map((task, index) => (
                     <Task
                         key={index}
@@ -21,7 +23,7 @@ export const TaskList = (props) => {
                         onCheck={() => handleCheck(index)}
                     />
                 ))}
-            </ul>
+            </Grid>
         </div>
     );
 };
