@@ -51,6 +51,17 @@ Se crea el componente `Menu` que contiene los links a las diferentes rutas de la
 ![about](https://github.com/An6ie02/IETI-Task-Llist/assets/100453879/dd27ce9b-6e2c-402e-8069-634612ff394d)\
 ![tasks](https://github.com/An6ie02/IETI-Task-Llist/assets/100453879/8eb899d2-38d5-4b0f-aaad-0c7bb1f3878e)
 
+## Parte 6:
++ Instalar Chakra UI en la aplicación y configurar lo necesario para su uso.
++ Utilizar los componentes gráficos de Chakra UI para mejorar la interfaz de usuario.
+
+Se instala `Chakra UI` en la aplicacion y se configura para su uso, se utilizan los componentes de Chakra UI para mejorar la interfaz de usuario. El resultado final se muestra en la siguiente imagen:
+
+![home](https://github.com/An6ie02/IETI-Task-Llist/assets/100453879/43553d60-be40-4886-a240-80ae3a8c9097)\
+![aboutUs](https://github.com/An6ie02/IETI-Task-Llist/assets/100453879/68381d45-5808-4ec0-b20b-18efa21d94e0)\
+![Task](https://github.com/An6ie02/IETI-Task-Llist/assets/100453879/a6cd36f8-8b1f-487d-9c6f-a80acdf36ffe)\
+![dark](https://github.com/An6ie02/IETI-Task-Llist/assets/100453879/50eea0c8-5ca7-4de2-a4ef-ed5ec3ff7752)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
