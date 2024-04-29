@@ -21,6 +21,8 @@ export function useTasks(params) {
         newTasks = [...newTasks, newTask];
         setTasks(newTasks);
         localStorage.setItem("tasks", JSON.stringify(newTasks));
+        document.getElementById("title").value = "";
+        document.getElementById("description").value = "";
     }
     const editTask = (taskIndex) => {
         const taskToEdit = tasks[taskIndex];
